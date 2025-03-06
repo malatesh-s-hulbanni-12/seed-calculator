@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmers Friend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Farmer Seed Calculater</h1>
+
+    <div class="form-group">
+      <label for="packets">Enter the number of packets:</label>
+      <input type="number" id="packets" />
+    </div>
+
+    <div class="form-group">
+      <label for="kgPerPacket">How many kg for 1 packet:</label>
+      <input type="number" id="kgPerPacket" />
+    </div>
+
+    <div class="form-group">
+      <label for="amountPerQuintal">Enter Amount per Quintal:</label>
+      <input type="number" id="amountPerQuintal" />
+    </div>
+
+    <div class="form-group">
+      <label for="dalliAmali">Enter the amount of dalli and amali:</label>
+      <input type="number" id="dalliAmali" />
+    </div>
+
+    <div class="form-group">
+      <label for="commission">Do you have a commission?</label>
+      <select id="commission" onchange="toggleCommissionInput()">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="commissionInput" style="display:none;">
+      <label for="commissionPercent">Enter the commission percentage:</label>
+      <input type="number" id="commissionPercent" />
+    </div>
+
+    <button onclick="calculateTotal()">Calculate</button>
+
+    <div class="output" id="output"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
