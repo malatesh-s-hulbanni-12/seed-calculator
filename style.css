@@ -52,3 +52,20 @@ body {
     border-radius: 4px;
     box-shadow:-1px -2px 6px 1px red, 1px 2px 6px 1px green ;
   }
+  .highlight {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background: #ffe99a;
+  border: 2px solid #f0c600;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% { transform: scale(1); background-color: #ffe99a; }
+  50% { transform: scale(1.07); background-color: #fff6b8; }
+  100% { transform: scale(1); background-color: #ffe99a; }
+}
