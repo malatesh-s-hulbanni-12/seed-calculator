@@ -63,6 +63,15 @@ body {
   animation: pulse 1.5s infinite;
 }
 
+
+.highlight1 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
 /* Animation */
 @keyframes pulse {
   0% { transform: scale(1); background-color: #ffe99a; }
